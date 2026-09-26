@@ -142,3 +142,36 @@ lib/
 │
 ├── firebase_options.dart
 └── main.dart
+Error Handling
+
+The application handles common cases including:
+
+No internet connection
+TMDB API errors
+Empty movie results
+Search with no results
+Firebase Authentication errors
+Database errors
+Empty movie lists
+Setup
+Install Flutter.
+Clone the repository.
+Run:
+flutter pub get
+Configure Firebase for the project.
+Provide the TMDB API Read Access Token locally.
+Run the application on an Android device.
+
+Example:
+
+flutter run -d YOUR_DEVICE_ID --dart-define=TMDB_TOKEN=YOUR_TOKEN
+Screenshots
+
+Add screenshots of the final application here.
+
+Known Limitations
+The application depends on internet access for TMDB movie data.
+TMDB API availability may affect movie loading and search.
+Project Goal
+
+The project demonstrates Flutter and Dart development, REST API integration, Firebase Authentication, application architecture, state management, database usage, persistent movie lists, GitHub workflow, error handling, and application navigation.
