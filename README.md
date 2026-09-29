@@ -10,48 +10,52 @@ The application allows users to browse movies, search for movies, view movie det
 
 ## Features
 
-- User Registration
-- User Login
-- User Logout
-- Authentication State Handling
-- Popular Movies
-- Now Playing Movies
-- Top Rated Movies
-- Upcoming Movies
-- Trending Movies
-- Movie Search
-- Movie Details
-- Favorites List
-- Watched List
-- Watching List
-- Want to Watch List
-- Persistent movie lists using Cloud Firestore
-- Loading, Empty, and Error Handling
+* User Registration
+* User Login
+* User Logout
+* Authentication State Handling
+* Popular Movies
+* Now Playing Movies
+* Top Rated Movies
+* Upcoming Movies
+* Trending Movies
+* Movie Search
+* Movie Details
+* Favorites List
+* Watched List
+* Watching List
+* Want to Watch List
+* Persistent movie lists using Cloud Firestore
+* Loading, Empty, and Error Handling
 
 ## Technologies
 
-- Flutter
-- Dart
-- Provider
-- Firebase Authentication
-- Cloud Firestore
-- TMDB API
-- HTTP
+* Flutter
+* Dart
+* Provider
+* Firebase Authentication
+* Cloud Firestore
+* TMDB API
+* HTTP
 
 ## Architecture
 
 The project follows the MVVM architecture.
 
 ### Model
+
 Contains movie data models used to convert API responses into Dart objects.
 
 ### View
+
 Contains the Flutter screens and UI.
 
 ### ViewModel / Provider
+
 Manages application state and connects the UI with the services.
 
 ### Services
+
 Handles external operations such as TMDB API requests, Firebase Authentication, and Firestore database operations.
 
 ## State Management
@@ -60,12 +64,12 @@ Provider is used for state management.
 
 It manages:
 
-- Authentication state
-- Movie data
-- Search results
-- Loading states
-- Error states
-- Movie lists
+* Authentication state
+* Movie data
+* Search results
+* Loading states
+* Error states
+* Movie lists
 
 ## TMDB API
 
@@ -73,13 +77,13 @@ The application uses TMDB as the primary movie-data service.
 
 Movie data includes:
 
-- Popular Movies
-- Now Playing
-- Top Rated
-- Upcoming
-- Trending
-- Movie Details
-- Search Results
+* Popular Movies
+* Now Playing
+* Top Rated
+* Upcoming
+* Trending
+* Movie Details
+* Search Results
 
 API requests are separated from the UI through the TMDB service.
 
@@ -87,12 +91,12 @@ API requests are separated from the UI through the TMDB service.
 
 Firebase Authentication is used for:
 
-- Registration
-- Login
-- Logout
-- Authentication state handling
-- Authentication error handling
-- Input validation
+* Registration
+* Login
+* Logout
+* Authentication state handling
+* Authentication error handling
+* Input validation
 
 Email and password authentication are used.
 
@@ -104,10 +108,10 @@ Each authenticated user has their own movie data.
 
 The application supports:
 
-- Favorites
-- Watched
-- Watching
-- Want to Watch
+* Favorites
+* Watched
+* Watching
+* Want to Watch
 
 Movies can be added to and removed from every list, and the data persists after restarting the application.
 
@@ -142,37 +146,75 @@ lib/
 │
 ├── firebase_options.dart
 └── main.dart
-Error Handling
+```
+
+## Error Handling
 
 The application handles common cases including:
 
-No internet connection
-TMDB API errors
-Empty movie results
-Search with no results
-Firebase Authentication errors
-Database errors
-Empty movie lists
-Setup
-Install Flutter.
-Clone the repository.
-Run:
+* No internet connection
+* TMDB API errors
+* Empty movie results
+* Search with no results
+* Firebase Authentication errors
+* Database errors
+* Empty movie lists
+
+## Setup
+
+1. Install Flutter.
+2. Clone the repository.
+3. Run:
+
+```bash
 flutter pub get
-Configure Firebase for the project.
-Provide the TMDB API Read Access Token locally.
-Run the application on an Android device.
+```
+
+4. Configure Firebase for the project.
+5. Provide the TMDB API Read Access Token locally.
+6. Run the application on an Android device.
 
 Example:
 
+```bash
 flutter run -d YOUR_DEVICE_ID --dart-define=TMDB_TOKEN=YOUR_TOKEN
-Screenshots
+```
 
-Add screenshots of the final application file scrennshots
+> The TMDB API token should be provided locally and should not be committed to the repository.
 
+## Screenshots
 
-Known Limitations
+### Login
+
+![Login Screen](screenshots/0.jpeg)
+
+### Home
+
+![Home Screen](screenshots/1.jpeg)
+
+![Home Screen](screenshots/3.jpeg)
+
+### Movie Details
+
+![Movie Details](screenshots/4.jpeg)
+
+### Want to Watch
+
+![Want to Watch](screenshots/5.jpeg)
+
+### Search
+
+![Search Screen](screenshots/7.jpeg)
+
+![Search Screen](screenshots/6.jpeg)
+
+## Known Limitations
+
 The application depends on internet access for TMDB movie data.
+
 TMDB API availability may affect movie loading and search.
-Project Goal
+
+## Project Goal
 
 The project demonstrates Flutter and Dart development, REST API integration, Firebase Authentication, application architecture, state management, database usage, persistent movie lists, GitHub workflow, error handling, and application navigation.
+
