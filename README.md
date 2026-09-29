@@ -217,4 +217,3 @@ TMDB API availability may affect movie loading and search.
 ## Project Goal
 
 The project demonstrates Flutter and Dart development, REST API integration, Firebase Authentication, application architecture, state management, database usage, persistent movie lists, GitHub workflow, error handling, and application navigation.
-
