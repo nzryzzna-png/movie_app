@@ -167,7 +167,8 @@ Example:
 flutter run -d YOUR_DEVICE_ID --dart-define=TMDB_TOKEN=YOUR_TOKEN
 Screenshots
 
-Add screenshots of the final application here.
+Add screenshots of the final application file scrennshots
+
 
 Known Limitations
 The application depends on internet access for TMDB movie data.
