@@ -131,7 +131,7 @@ lib/
 │   ├── tmdb_service.dart
 │   └── firestore_service.dart
 │
-├── screens/
+├── Screens/
 │   ├── login_screen.dart
 │   ├── register_screen.dart
 │   ├── home_screen.dart
